@@ -1,10 +1,17 @@
-from os import path
+# Solve the quadratic equation ax**2 + bx + c = 0
 
+# import complex math module
+import cmath
 
-print("rabatanga")
+a = 1
+b = 5
+c = 6
 
-def ojete():
-    for i in range(10):
-        print ("eres ",i," veces más tonto")
+# calculate the discriminant
+d = (b**2) - (4*a*c)
 
-ojete()
+# find two solutions
+sol1 = (-b-cmath.sqrt(d))/(2*a)
+sol2 = (-b+cmath.sqrt(d))/(2*a)
+
+print('The solution are {0} and {1}'.format(sol1,sol2))
